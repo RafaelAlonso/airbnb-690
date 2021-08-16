@@ -1,0 +1,9 @@
+<h1>Flats</h1>
+
+<%@flats.each do |flat| %>
+  <p><%= "#{flat["name"]} - #{flat["price"]}"%></p>
+  <%= link_to flat["name"], flat_path(flat["id"]) %>
+<%end%>
+
+
+
